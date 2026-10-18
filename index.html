@@ -323,7 +323,7 @@
       </div>
 
       <div class="glass-card">
-        <h3 style="font-size:14.5px; font-weight:700; color:var(--c-main); margin-bottom:12px;">🔥 สินค้ายอดฮิต & คนกดบ่อยสุด ♡</h3>
+        <h3 style="font-size:14.5px; font-weight:700; color:var(--c-main); margin-bottom:12px;">♡ สินค้ายอดฮิต & คนกดบ่อยสุด ♡</h3>
         <div class="apps-grid" id="homeHotAppsGrid"></div>
       </div>
     </div>
@@ -729,11 +729,11 @@
         let tagHtml = '';
         if (item.tag === 'sale') {
           const pct = item.discountPercent ? ` -${item.discountPercent}%` : '';
-          tagHtml = `<span class="tag-badge tag-sale">🏷️${pct} SALE</span>`;
+          tagHtml = `<span class="tag-badge tag-sale">♡${pct} SALE</span>`;
         } else if (item.tag === 'hot') {
-          tagHtml = `<span class="tag-badge tag-hot">🔥 ยอดฮิต</span>`;
+          tagHtml = `<span class="tag-badge tag-hot">♡ ยอดฮิต</span>`;
         } else if (item.tag === 'pop') {
-          tagHtml = `<span class="tag-badge tag-pop">✨ แนะนำ</span>`;
+          tagHtml = `<span class="tag-badge tag-pop">♡ แนะนำ</span>`;
         }
 
         const card = document.createElement('div');
@@ -756,7 +756,7 @@
       grid.innerHTML = '';
       const hotList = appsDataList.slice(0, 4);
       hotList.forEach(item => {
-        let tagHtml = `<span class="tag-badge tag-hot">🔥 ฮิต</span>`;
+        let tagHtml = `<span class="tag-badge tag-hot">♡ ฮิต</span>`;
         if (item.tag === 'sale' && item.discountPercent) {
           tagHtml = `<span class="tag-badge tag-sale">-${item.discountPercent}%</span>`;
         }
